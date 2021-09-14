@@ -1,0 +1,34 @@
+{
+    "name": "qingfengai/qingfeng-captcha",
+    "type": "library",
+    "require": {
+        "php": ">=7.1.0",
+        "topthink/framework": "^6.0.0"
+    },
+    "license": "Apache-2.0",
+    "autoload": {
+        "psr-4": {
+            "qingfeng\\": "src/"
+        },
+        "files": [
+            "src/helper.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "情枫",
+            "email": "752802786@qq.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "extra": {
+        "think": {
+            "services": [
+                "qingfeng\\CaptchaService"
+            ],
+            "config":{
+                "captcha": "src/config.php"
+            }
+        }
+    }
+}
